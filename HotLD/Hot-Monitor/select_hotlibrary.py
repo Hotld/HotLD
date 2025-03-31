@@ -89,11 +89,6 @@ def get_hotlibrary_infos(mapinfo_data):
         hotlibrary_map_infos[str(ht_map_range)
                              ]["symbol_infos"] = map_symbol_infos
 
-    """
-    with open("test.json", 'w') as json_file:
-        json.dump(hotlibrary_map_infos, json_file, indent=4)
-    """
-
     return hotlibrary_map_infos
 
 
