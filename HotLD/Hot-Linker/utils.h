@@ -39,20 +39,20 @@ void parse_envs()
         printf("HOTLD_REWRITE_PLT : %s\n", env_var);
     }
 
-    env_var = getenv("HOTLD_HOT_LIBRARY");
+    env_var = getenv("HOTLD_HOTLIB");
 
     if (env_var != NULL)
     {
         _dl_hot_template_path = env_var;
-        printf("HOTLD_HOT_LIBRARY : %s\n", _dl_hot_template_path);
+        printf("HOTLD_HOTLIB : %s\n", _dl_hot_template_path);
     }
 
-    env_var = getenv("HOTLD_HOT_LIBRARIES");
+    env_var = getenv("HOTLD_HOTLIBS");
 
     if (env_var != NULL)
     {
         dl_multi_librarys = env_var;
-        printf("[HOTLD] HOTLD_HOT_LIBRARIES : %s\n", dl_multi_librarys);
+        printf("[HOTLD] HOTLD_HOTLIBS : %s\n", dl_multi_librarys);
     }
 }
 
